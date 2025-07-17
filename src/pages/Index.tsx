@@ -346,12 +346,7 @@ const Index = () => {
             </Card>
           </div>
 
-          <div className="text-center mt-12">
-            <Button variant="outline" size="lg">
-              <Icon name="FolderOpen" className="h-5 w-5 mr-2" />
-              Посмотреть все проекты
-            </Button>
-          </div>
+
         </div>
       </section>
 
