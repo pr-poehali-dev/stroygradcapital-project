@@ -165,19 +165,192 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[1, 2, 3, 4, 5, 6].map((project) => (
-              <Card key={project} className="hover:shadow-lg transition-shadow">
-                <div className="h-48 bg-gray-200 rounded-t-lg flex items-center justify-center">
-                  <Icon name="Image" className="h-12 w-12 text-gray-400" />
+            {/* Проект 1 - Ремонт квартиры */}
+            <Card className="hover:shadow-lg transition-shadow group">
+              <div className="relative overflow-hidden rounded-t-lg">
+                <img 
+                  src="/img/c7f1b209-7e95-4f38-9dd9-4feb00f75f7b.jpg" 
+                  alt="Ремонт квартиры" 
+                  className="h-48 w-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute top-4 right-4 bg-primary text-white px-2 py-1 rounded text-sm">
+                  Жилищное
                 </div>
-                <CardHeader>
-                  <CardTitle>Проект {project}</CardTitle>
-                  <CardDescription>
-                    Описание реализованного проекта с основными характеристиками
-                  </CardDescription>
-                </CardHeader>
-              </Card>
-            ))}
+              </div>
+              <CardHeader>
+                <CardTitle>Ремонт квартиры премиум-класса</CardTitle>
+                <CardDescription>
+                  Полная реконструкция 3-комнатной квартиры 120 м² с дизайнерским ремонтом
+                </CardDescription>
+                <div className="flex items-center space-x-4 text-sm text-gray-500 mt-2">
+                  <span className="flex items-center">
+                    <Icon name="Calendar" className="h-4 w-4 mr-1" />
+                    6 месяцев
+                  </span>
+                  <span className="flex items-center">
+                    <Icon name="Home" className="h-4 w-4 mr-1" />
+                    120 м²
+                  </span>
+                </div>
+              </CardHeader>
+            </Card>
+
+            {/* Проект 2 - Офисный центр */}
+            <Card className="hover:shadow-lg transition-shadow group">
+              <div className="relative overflow-hidden rounded-t-lg">
+                <img 
+                  src="/img/2c4dfe28-981b-44b8-993b-3b5ce4628f18.jpg" 
+                  alt="Офисный центр" 
+                  className="h-48 w-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute top-4 right-4 bg-primary text-white px-2 py-1 rounded text-sm">
+                  Коммерческое
+                </div>
+              </div>
+              <CardHeader>
+                <CardTitle>Офисный центр "Бизнес-Плаза"</CardTitle>
+                <CardDescription>
+                  Строительство современного офисного здания с подземным паркингом
+                </CardDescription>
+                <div className="flex items-center space-x-4 text-sm text-gray-500 mt-2">
+                  <span className="flex items-center">
+                    <Icon name="Calendar" className="h-4 w-4 mr-1" />
+                    18 месяцев
+                  </span>
+                  <span className="flex items-center">
+                    <Icon name="Building2" className="h-4 w-4 mr-1" />
+                    5000 м²
+                  </span>
+                </div>
+              </CardHeader>
+            </Card>
+
+            {/* Проект 3 - Частный дом */}
+            <Card className="hover:shadow-lg transition-shadow group">
+              <div className="relative overflow-hidden rounded-t-lg">
+                <img 
+                  src="/img/c2533000-1be9-4b05-b982-ea324f3e276b.jpg" 
+                  alt="Частный дом" 
+                  className="h-48 w-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute top-4 right-4 bg-primary text-white px-2 py-1 rounded text-sm">
+                  Жилищное
+                </div>
+              </div>
+              <CardHeader>
+                <CardTitle>Загородный дом "Комфорт"</CardTitle>
+                <CardDescription>
+                  Строительство двухэтажного дома с террасой и ландшафтным дизайном
+                </CardDescription>
+                <div className="flex items-center space-x-4 text-sm text-gray-500 mt-2">
+                  <span className="flex items-center">
+                    <Icon name="Calendar" className="h-4 w-4 mr-1" />
+                    12 месяцев
+                  </span>
+                  <span className="flex items-center">
+                    <Icon name="Home" className="h-4 w-4 mr-1" />
+                    250 м²
+                  </span>
+                </div>
+              </CardHeader>
+            </Card>
+
+            {/* Проект 4 - Магазин */}
+            <Card className="hover:shadow-lg transition-shadow group">
+              <div className="relative overflow-hidden rounded-t-lg">
+                <img 
+                  src="/img/e598e445-0fbf-4fa3-85f3-b3df71cf6e5f.jpg" 
+                  alt="Магазин" 
+                  className="h-48 w-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute top-4 right-4 bg-primary text-white px-2 py-1 rounded text-sm">
+                  Коммерческое
+                </div>
+              </div>
+              <CardHeader>
+                <CardTitle>Торговый центр "Модерн"</CardTitle>
+                <CardDescription>
+                  Реконструкция торгового помещения с современным дизайном
+                </CardDescription>
+                <div className="flex items-center space-x-4 text-sm text-gray-500 mt-2">
+                  <span className="flex items-center">
+                    <Icon name="Calendar" className="h-4 w-4 mr-1" />
+                    4 месяца
+                  </span>
+                  <span className="flex items-center">
+                    <Icon name="ShoppingBag" className="h-4 w-4 mr-1" />
+                    800 м²
+                  </span>
+                </div>
+              </CardHeader>
+            </Card>
+
+            {/* Проект 5 - Кухня */}
+            <Card className="hover:shadow-lg transition-shadow group">
+              <div className="relative overflow-hidden rounded-t-lg">
+                <img 
+                  src="/img/0995b405-842d-4240-891d-e01739c3a680.jpg" 
+                  alt="Кухня" 
+                  className="h-48 w-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute top-4 right-4 bg-primary text-white px-2 py-1 rounded text-sm">
+                  Жилищное
+                </div>
+              </div>
+              <CardHeader>
+                <CardTitle>Кухня-студия "Элит"</CardTitle>
+                <CardDescription>
+                  Создание просторной кухни-студии с островом и премиальной техникой
+                </CardDescription>
+                <div className="flex items-center space-x-4 text-sm text-gray-500 mt-2">
+                  <span className="flex items-center">
+                    <Icon name="Calendar" className="h-4 w-4 mr-1" />
+                    2 месяца
+                  </span>
+                  <span className="flex items-center">
+                    <Icon name="ChefHat" className="h-4 w-4 mr-1" />
+                    45 м²
+                  </span>
+                </div>
+              </CardHeader>
+            </Card>
+
+            {/* Проект 6 - Ресторан */}
+            <Card className="hover:shadow-lg transition-shadow group">
+              <div className="relative overflow-hidden rounded-t-lg">
+                <img 
+                  src="/img/6501d3b3-01d3-4beb-82d3-f6f97ebb6867.jpg" 
+                  alt="Ресторан" 
+                  className="h-48 w-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute top-4 right-4 bg-primary text-white px-2 py-1 rounded text-sm">
+                  Коммерческое
+                </div>
+              </div>
+              <CardHeader>
+                <CardTitle>Ресторан "Атмосфера"</CardTitle>
+                <CardDescription>
+                  Полное оформление ресторана с современным интерьером и профессиональной кухней
+                </CardDescription>
+                <div className="flex items-center space-x-4 text-sm text-gray-500 mt-2">
+                  <span className="flex items-center">
+                    <Icon name="Calendar" className="h-4 w-4 mr-1" />
+                    8 месяцев
+                  </span>
+                  <span className="flex items-center">
+                    <Icon name="Utensils" className="h-4 w-4 mr-1" />
+                    300 м²
+                  </span>
+                </div>
+              </CardHeader>
+            </Card>
+          </div>
+
+          <div className="text-center mt-12">
+            <Button variant="outline" size="lg">
+              <Icon name="FolderOpen" className="h-5 w-5 mr-2" />
+              Посмотреть все проекты
+            </Button>
           </div>
         </div>
       </section>
